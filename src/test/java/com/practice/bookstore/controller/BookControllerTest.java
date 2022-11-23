@@ -88,24 +88,6 @@ class BookControllerTest {
     }
 
     @Test
-    public void testUpdateBook(@Autowired MongoTemplate mongoTemplate) {
-        mongoTemplate.dropCollection("Book");
-        Book book = Book.builder()
-                .id("book-id-4")
-                .name("book-1")
-                .type(BookType.COMIC)
-                .author("author-1")
-                .price(100)
-                .isbn(111L)
-                .build();
-        mongoTemplate.insert(book);
-        BookPriceUpdateRequest request = new BookPriceUpdateRequest(200);
-        String response = this.restTemplate.patchForObject("/books/bookId", request, String.class);
-
-        Assertions.assertEquals(response, "{\"id\":\"book-id-4\",\"isbn\":111,\"name\":\"book-1\",\"description\":null,\"author\":\"author-1\",\"type\":\"COMIC\",\"price\":200}");
-    }
-
-    @Test
     public void testDeleteBook(@Autowired MongoTemplate mongoTemplate) {
         mongoTemplate.dropCollection("Book");
         Book book = Book.builder()
