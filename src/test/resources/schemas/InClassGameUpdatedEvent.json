@@ -1,0 +1,231 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "id",
+    "schoolId",
+    "classId",
+    "mloId",
+    "title",
+    "teacherId",
+    "subjectId",
+    "schoolGradeId",
+    "genSubject",
+    "k12Grade",
+    "groupId",
+    "learningPathId",
+    "trimesterId",
+    "questions",
+    "questionCodes",
+    "updatedAt",
+    "occurredOn"
+  ],
+  "properties": {
+    "id": {
+      "$id": "#/properties/id",
+      "type": "string",
+      "title": "The Id Schema",
+      "default": "",
+      "examples": [
+        "cb374413-4eeb-489a-835d-d75cf6fd6050"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "schoolId": {
+      "$id": "#/properties/schoolId",
+      "type": "string",
+      "title": "The Schoolid Schema",
+      "default": "",
+      "examples": [
+        "64bd66d5-d8d0-47c4-b681-d65653fe9c1c"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "classId": {
+      "$id": "#/properties/classId",
+      "type": "string",
+      "title": "The Classid Schema",
+      "default": "",
+      "examples": [
+        "b35c33b5-3c92-4eff-8b21-f2ba41294d67"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "mloId": {
+      "$id": "#/properties/mloId",
+      "type": "string",
+      "title": "The Mloid Schema",
+      "default": "",
+      "examples": [
+        "554a4905-7b55-4864-b743-942a5b3ca7be"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "title": {
+      "$id": "#/properties/title",
+      "type": "string",
+      "title": "The Title Schema",
+      "default": "",
+      "examples": [
+        "some new title"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "teacherId": {
+      "$id": "#/properties/teacherId",
+      "type": "string",
+      "title": "The Teacherid Schema",
+      "default": "",
+      "examples": [
+        "5b938e3d-0973-493f-8010-4b49d30fd8a4"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "subjectId": {
+      "$id": "#/properties/subjectId",
+      "type": "string",
+      "title": "The Subjectid Schema",
+      "default": "",
+      "examples": [
+        "1b02c581-3f28-41e0-8d48-82941f2c84ba"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "schoolGradeId": {
+      "$id": "#/properties/schoolGradeId",
+      "type": "string",
+      "title": "The Schoolgradeid Schema",
+      "default": "",
+      "examples": [
+        "abb530c9-9c61-415e-982f-f905060a4772"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "genSubject": {
+      "$id": "#/properties/genSubject",
+      "type": "string",
+      "title": "The Gensubject Schema",
+      "default": "",
+      "examples": [
+        "Math"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "k12Grade": {
+      "$id": "#/properties/k12Grade",
+      "type": "integer",
+      "title": "The K12grade Schema",
+      "default": 0,
+      "examples": [
+        6
+      ]
+    },
+    "groupId": {
+      "$id": "#/properties/groupId",
+      "type": "string",
+      "title": "The Groupid Schema",
+      "default": "",
+      "examples": [
+        "f76ef5ca-cefa-4f33-a5c5-a8adfe173881"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "learningPathId": {
+      "$id": "#/properties/learningPathId",
+      "type": "string",
+      "title": "The Learningpathid Schema",
+      "default": "",
+      "examples": [
+        "90987466-05ce-452f-bb46-f676a3762dda"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "trimesterId": {
+      "$id": "#/properties/trimesterId",
+      "type": "string",
+      "title": "The Trimesterid Schema",
+      "default": "",
+      "examples": [
+        "9dc475e8-97f9-4e8e-abd2-99ecb12093e4"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "questions": {
+      "$id": "#/properties/questions",
+      "type": "array",
+      "title": "The Questions Schema",
+      "items": {
+        "$id": "#/properties/questions/items",
+        "type": "object",
+        "title": "The Items Schema",
+        "required": [
+          "code",
+          "time"
+        ],
+        "properties": {
+          "code": {
+            "$id": "#/properties/questions/items/properties/code",
+            "type": "string",
+            "title": "The Code Schema",
+            "default": "",
+            "examples": [
+              "Q1"
+            ],
+            "pattern": "^(.*)$"
+          },
+          "time": {
+            "$id": "#/properties/questions/items/properties/time",
+            "type": "integer",
+            "title": "The Time Schema",
+            "default": 0,
+            "examples": [
+              60
+            ]
+          }
+        }
+      }
+    },
+    "questionCodes": {
+      "$id": "#/properties/questionCodes",
+      "type": "array",
+      "title": "The Questioncodes Schema",
+      "items": {
+        "$id": "#/properties/questionCodes/items",
+        "type": "string",
+        "title": "The Items Schema",
+        "default": "",
+        "examples": [
+          "Q1",
+          "Q2",
+          "Q3",
+          "Q4",
+          "Q5"
+        ],
+        "pattern": "^(.*)$"
+      }
+    },
+    "updatedAt": {
+      "$id": "#/properties/updatedAt",
+      "type": "string",
+      "title": "The Updatedat Schema",
+      "default": "",
+      "examples": [
+        "2020-02-11T13:31:16.508"
+      ],
+      "pattern": "^(.*)$"
+    },
+    "occurredOn": {
+      "$id": "#/properties/occurredOn",
+      "type": "string",
+      "title": "The Occurredon Schema",
+      "default": "",
+      "examples": [
+        "2020-02-11T13:31:16.508"
+      ],
+      "pattern": "^(.*)$"
+    }
+  }
+}
